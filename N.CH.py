@@ -62,9 +62,9 @@ class NumberChecker(QWidget):
     def check_number(self):
         num = int(self.textbox.text())
         if is_prime(num):
-            self.result_label.setText(f"{num} (عدد اول است )")
+            self.result_label.setText(f"{num} (عدد اول است)")
         else:
-            self.result_label.setText(f"{num} is a composite number.")
+            self.result_label.setText(f"{num} (عدد مرکب است)")
         factors_str = ', '.join(map(str, factors(num)))
         self.factors_label.setText(f"<font color='blue'>Factors of {num}: {factors_str}</font>")
 
